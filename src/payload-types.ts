@@ -187,7 +187,7 @@ export interface Page {
       [k: string]: unknown;
     };
     image: string | Media;
-    cta_button: {
+    CTA_button: {
       label: string;
       url: string;
     };
@@ -332,7 +332,7 @@ export interface PagesSelect<T extends boolean = true> {
               heading?: T;
               subheading?: T;
               image?: T;
-              cta_button?:
+              CTA_button?:
                 | T
                 | {
                     label?: T;

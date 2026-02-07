@@ -28,5 +28,10 @@ export default async function HomePage() {
     return <div>Page not found</div>
   }
 
-  return <div>{page.title}</div>
+  return (
+    <div>
+      {page.title}
+      <p>{JSON.stringify(page.layout[0], null, 2)}</p>
+    </div>
+  )
 }

@@ -6,7 +6,7 @@
 
 > https://github.com/samedandev/2602_payload-landing-page
 
-### Created 1st Block
+### Created 1st Block on Backend
 
 > ![1st block](https://github.com/samedandev/2602_payload-landing-page/blob/main/_printscreens/image01.jpg)
 
@@ -35,6 +35,10 @@ const Pages: CollectionConfig = {
               required: true,
             },
 ```
+
+### 1st Block on Frontend
+
+> /src/app/(frontend)/page.tsx
 
 # Payload Blank Template
 

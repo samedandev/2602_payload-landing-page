@@ -38,7 +38,7 @@ const Pages: CollectionConfig = {
               required: true,
             },
             {
-              name: 'cta_button',
+              name: 'CTA_button',
               type: 'group',
               required: true,
               fields: [
