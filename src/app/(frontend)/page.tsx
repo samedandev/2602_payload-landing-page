@@ -42,7 +42,7 @@ export default async function HomePage() {
 
   return (
     <div>
-      {page.title}
+      {/* {page.title} */}
       {/* <p>{JSON.stringify(page.layout[0], null, 2)}</p> */}
       <div className="page">{page.layout?.map((block) => renderBlock(block))}</div>
     </div>
