@@ -10,6 +10,32 @@
 
 > ![1st block](https://github.com/samedandev/2602_payload-landing-page/blob/main/_printscreens/image01.jpg)
 
+> /src/collections/Pages.tsx
+
+```
+const Pages: CollectionConfig = {
+  slug: 'pages',
+  fields: [
+    {
+      name: 'title',
+      type: 'text',
+      required: true,
+    }...
+    {
+      name: 'layout',
+      type: 'blocks',
+      required: true,
+      blocks: [
+        {
+          slug: 'hero',
+          fields: [
+            {
+              name: 'heading',
+              type: 'text',
+              required: true,
+            },
+```
+
 # Payload Blank Template
 
 This template comes configured with the bare minimum to get started on anything you need.
