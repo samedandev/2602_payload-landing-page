@@ -40,6 +40,10 @@ const Pages: CollectionConfig = {
 
 > /src/app/(frontend)/page.tsx
 
+### Frontend display data
+
+> ![FrontPage](https://github.com/samedandev/2602_payload-landing-page/blob/main/_printscreens/image02.jpg)
+
 # Payload Blank Template
 
 This template comes configured with the bare minimum to get started on anything you need.

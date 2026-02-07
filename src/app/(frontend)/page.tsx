@@ -5,6 +5,8 @@ import React from 'react'
 import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
+import { Page } from '@/payload-types'
+import HeroBlock from './components/HeroBlock'
 // import './styles.css'
 
 export default async function HomePage() {
@@ -28,10 +30,21 @@ export default async function HomePage() {
     return <div>Page not found</div>
   }
 
+  // # loops through the blocks
+  const renderBlock = (block: Page['layout']) => {
+    switch (block.blockType) {
+      case 'hero':
+        return <HeroBlock block={block} key={block.id} />
+      default:
+        return null
+    }
+  }
+
   return (
     <div>
       {page.title}
-      <p>{JSON.stringify(page.layout[0], null, 2)}</p>
+      {/* <p>{JSON.stringify(page.layout[0], null, 2)}</p> */}
+      <div className="page">{page.layout?.map((block) => renderBlock(block))}</div>
     </div>
   )
 }
