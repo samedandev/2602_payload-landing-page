@@ -1,3 +1,15 @@
+# Source Tutorial
+
+> https://www.youtube.com/watch?v=qSkSKlw_fW8
+
+# This git
+
+> https://github.com/samedandev/2602_payload-landing-page
+
+### Created 1st Block
+
+> ![1st block](https://github.com/samedandev/2602_payload-landing-page/blob/main/_printscreens/image01.jpg)
+
 # Payload Blank Template
 
 This template comes configured with the bare minimum to get started on anything you need.
