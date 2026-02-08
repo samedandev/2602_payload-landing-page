@@ -3,7 +3,9 @@ import { RichText } from '@payloadcms/richtext-lexical/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function HeroBlock({ block }: { block: Page['layout'][0] }) {
+type HeroProps = Extract<Page['layout'][0], { blockType: 'hero' }>
+
+export default function HeroBlock({ block }: { block: HeroProps }) {
   return (
     <div
       style={{

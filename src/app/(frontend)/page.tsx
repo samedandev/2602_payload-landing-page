@@ -7,6 +7,8 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import { Page } from '@/payload-types'
 import HeroBlock from './components/HeroBlock'
+import ContentBlock from './components/ContentBlock'
+
 // import './styles.css'
 
 export default async function HomePage() {
@@ -31,10 +33,12 @@ export default async function HomePage() {
   }
 
   // # loops through the blocks
-  const renderBlock = (block: Page['layout']) => {
+  const renderBlock = (block: Page['layout'][0]) => {
     switch (block.blockType) {
       case 'hero':
         return <HeroBlock block={block} key={block.id} />
+      case 'content':
+        return <ContentBlock block={block} key={block.id} />
       default:
         return null
     }
